@@ -48,13 +48,13 @@ const Header = () => {
         </div>
         <div className="header_nav">
           <Link href="/available-kittens" className={`header_nav_link ${pathname === '/available-kittens' ? 'active' : ''}`}>Available kittens</Link>
-          <Link href="/faq" className={`header_nav_link ${pathname === '/faq' ? 'active' : ''}`}>FAQ</Link>
+          <Link href="/sold-kittens" className={`header_nav_link ${pathname === '/sold-kittens' ? 'active' : ''}`}>Sold kittens</Link>
           <Link href="/manufacturers" className={`header_nav_link ${pathname === '/manufacturers' ? 'active' : ''}`}>Our manufacturers</Link>
           <Link href="/graduates" className={`header_nav_link ${pathname === '/graduates' ? 'active' : ''}`}>Our graduates</Link>
           <Link href="/documentation" className={`header_nav_link ${pathname === '/documentation' ? 'active' : ''}`}>Documentation</Link>
           {/* <Link href="/" className={`header_nav_link ${pathname === '/' ? 'active' : ''}`}>Story</Link> */}
-          <Link href="/sold-kittens" className={`header_nav_link ${pathname === '/sold-kittens' ? 'active' : ''}`}>Sold kittens</Link>
           <Link href="/about" className={`header_nav_link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
+          <Link href="/faq" className={`header_nav_link ${pathname === '/faq' ? 'active' : ''}`}>FAQ</Link>
         </div>
       </header>
       <header className="header_mob">
@@ -79,12 +79,12 @@ const Header = () => {
               </div>
               <div className="header_nav">
                 <Link href="/available-kittens" className={`header_nav_link ${pathname === '/available-kittens' ? 'active' : ''}`}>Available kittens</Link>
-                <Link href="/faq" className={`header_nav_link ${pathname === '/faq' ? 'active' : ''}`}>FAQ</Link>
+                <Link href="/sold-kittens" className={`header_nav_link ${pathname === '/sold-kittens' ? 'active' : ''}`}>Sold kittens</Link>
                 <Link href="/manufacturers" className={`header_nav_link ${pathname === '/manufacturers' ? 'active' : ''}`}>Our manufacturers</Link>
                 <Link href="/graduates" className={`header_nav_link ${pathname === '/graduates' ? 'active' : ''}`}>Our graduates</Link>
                 <Link href="/documentation" className={`header_nav_link ${pathname === '/documentation' ? 'active' : ''}`}>Documentation</Link>
-                <Link href="/sold-kittens" className={`header_nav_link ${pathname === '/sold-kittens' ? 'active' : ''}`}>Sold kittens</Link>
                 <Link href="/about" className={`header_nav_link ${pathname === '/about' ? 'active' : ''}`}>About Us</Link>
+                <Link href="/faq" className={`header_nav_link ${pathname === '/faq' ? 'active' : ''}`}>FAQ</Link>
               </div>
             </div>
           </div>
