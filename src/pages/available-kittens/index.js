@@ -25,25 +25,7 @@ export default function AvailableKittens() {
             <p className={styles.catalog_item_p}>Male</p>
             <p className={styles.catalog_item_p + " " + styles.catalog_item_age}>12 weeks</p>
             <p className={styles.catalog_item_status + " " + styles.catalog_item_status_active}></p>
-            {/* <p className={styles.catalog_item_status + " " + styles.catalog_item_status_sold}></p>
-            <p className={styles.catalog_item_status + " " + styles.catalog_item_status_reserved}></p> */}
-          </div>
-        </Link>
-        <Link href="/kittens/himberry" className={styles.catalog_item}>
-          <Image
-            src="/images/kittens/himberry2/00_himberry2.jpg"
-            width={200}
-            height={200}
-            alt="Kitten Himberry"
-            className={styles.catalog_item_img}
-          />
-          <div className={styles.catalog_item_top}>
-            <p className={styles.catalog_item_price}>$350</p>
-          </div>
-          <div className={styles.catalog_item_bottom}>
-            <p className={styles.catalog_item_p}>Female</p>
-            <p className={styles.catalog_item_p + " " + styles.catalog_item_age}>1 year</p>
-            <p className={styles.catalog_item_status + " " + styles.catalog_item_status_active}></p>
+            {/* <p className={styles.catalog_item_status + " " + styles.catalog_item_status_reserved}></p> */}
           </div>
         </Link>
         <Link href="/kittens/himberry" className={styles.catalog_item}>
@@ -94,7 +76,7 @@ export default function AvailableKittens() {
           <div className={styles.catalog_item_bottom}>
             <p className={styles.catalog_item_p}>Female</p>
             <p className={styles.catalog_item_p + " " + styles.catalog_item_age}>2 weeks</p>
-            <p className={styles.catalog_item_status + " " + styles.catalog_item_status_sold}></p>
+            <p className={styles.catalog_item_status + " " + styles.catalog_item_status_reserved}></p>
           </div>
         </Link>
         <Link href="/kittens/himberry" className={styles.catalog_item}>

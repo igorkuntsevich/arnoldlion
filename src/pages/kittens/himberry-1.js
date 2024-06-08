@@ -6,7 +6,7 @@ import { BreadcrumbsAvailableKittens } from '@/subitems/breadcrumbs/available-ki
 import { useInView } from "react-intersection-observer";
 
 
-export default function Himberry() {
+export default function Himberry1() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -35,10 +35,7 @@ export default function Himberry() {
               <p className={styles.kitten_intro_text_p}>My name is Himberry Arnold Lion. I am 12 weeks, color black tabby with brown tan.</p>
             </div>
             <div ref={ref} className={styles.kitten_intro_bottom}>
-              <p className={styles.kitten_intro_price}>$350</p>
-              {/* <p className={styles.kitten_intro_status + " " + styles.kitten_intro_status_active}></p> */}
-              <p className={styles.kitten_intro_status + " " + styles.kitten_intro_status_reserved}></p>
-              {/* <p className={styles.kitten_intro_status + " " + styles.kitten_intro_status_sold}></p> */}
+              <p className={styles.kitten_intro_status + " " + styles.kitten_intro_status_sold}></p>
             </div>
           </div>
         </div>

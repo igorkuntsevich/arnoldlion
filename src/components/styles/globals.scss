@@ -53,6 +53,14 @@ span {
   color: #000000;
   font-weight: 400;
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeInHeader {
   0% {
     transform: translateY(-100px);
@@ -107,14 +115,6 @@ span {
     padding-left: 15px;
   }
 }
-// body.is_sticky header {
-//   @media screen and (max-width: $mobile) {
-//     background-color: #FFFFFF;
-//     border-bottom: 1px solid #D5D5D5;
-//     animation: fadeInHeader 0.5s;
-//     padding: 0.78vw 0;
-//   }
-// }
 .header_open {
   @media screen and (max-width: $mobile) {
       background-color: #FFFFFF;
@@ -174,11 +174,7 @@ span {
     width: 459px;
   }
   @media screen and (max-width: $mobile) {
-    // height: 100%;
-    // width: 100%;
-    // position: relative;
     display: none;
-    // margin-top: 6.1vw;
   }
 }
 .header_mob {
@@ -247,13 +243,14 @@ span {
   line-height: 3.6vw;
   margin-bottom: 1vw;
   padding-left: 2.6vw;
+  position: relative;
   &:last-child {
     margin-bottom: 0;
   }
   &.active {
     position: relative;
     color: #FFFFFF;
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 100%;
@@ -284,6 +281,39 @@ span {
     padding-left: 16.4vw;
     &:hover {
       color: #000000;
+    }
+  }
+}
+.header_nav_link_available {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../svg/paw_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 50%;
+    left: 14.6vw;
+    transform: translate(0, -50%);
+  }
+  @media screen and (min-width: $fullscreen) {
+    &::after {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  @media screen and (min-width: $bigfullscreen) {
+    &::after {
+      left: 255px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    &::after {
+      width: 5.7vw;
+      height: 5.7vw;
+      right: 17vw;
+      left: auto;
     }
   }
 }
@@ -390,21 +420,47 @@ footer {
 }
 .footer_cons_right {
   background-color: #272727;
-  background-image: url(../../svg/footer_paws.svg);
-  background-size: 8.1vw;
-  background-repeat: no-repeat;
-  background-position: top 3.3vw right 2.4vw;
-  padding: 3.8vw 0 3vw 2.6vw;
+  padding: 3.8vw 2vw 3vw 2.6vw;
+  position: relative;
+  &.active {
+    .footer_cons_paws {
+      opacity: 1;
+      transition: all 0.5s ease-in;
+    }
+  }
   @media screen and (min-width: $fullscreen) {
-    background-size: 123px;
-    background-position: top 50px right 36px;
-    padding: 58px 0 46px 40px;
+    padding: 58px 30px 46px 40px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 7.7vw 3.9vw;
+    &.active {
+      .footer_cons_paws {
+        opacity: 0;
+      }
+    }
+  }
+}
+.footer_cons_paws {
+  position: absolute;
+  top: 3.3vw;
+  right: 2.4vw;
+  width: 8.1vw;
+  height: 14.2vw;
+  background-image: url(../../svg/footer_paws.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  @media screen and (min-width: $fullscreen) {
+    width: 123px;
+    height: 216px;
+    top: 50px;
+    right: 36px;
   }
   @media screen and (max-width: $mobile) {
     background-image: none;
-    padding: 7.7vw 3.9vw;
   }
 }
+
 .footer_cons_text {
   display: flex;
   flex-direction: column;
@@ -491,7 +547,7 @@ footer {
 .footer_cons_link_whatsapp {
   padding: 1.1vw 2.1vw 0.9vw 3.8vw;
   @media screen and (min-width: $fullscreen) {
-    padding: 17px 32px 14px 58px;
+    padding: 16px 32px 16px 58px;
   }
   @media screen and (max-width: $mobile) {
     padding: 3.5vw 7.1vw 3.3vw 13.3vw;
