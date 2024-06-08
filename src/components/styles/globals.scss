@@ -93,10 +93,10 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(100vh - 2.6vw);
+  min-height: calc(100vh - 2.2vw);
   width: 75%;
   @media screen and (min-width: $fullscreen) {
-    min-height: calc(100vh - 40px);
+    min-height: calc(100vh - 33px);
   }
   @media screen and (max-width: $mobile) {
     width: 100%;
@@ -597,11 +597,11 @@ footer {
 }
 .footer_grid {
   display: grid;
-  grid-gap: 1.4vw 0;
+  grid-gap: 0.9vw 0;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 21px 0;
+    grid-gap: 14px 0;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 5.3vw 7vw;
