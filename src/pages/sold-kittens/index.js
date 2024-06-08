@@ -24,18 +24,6 @@ export default function SoldKittens() {
         </Link>
         <Link href="/kittens/himberry-1" className={styles.catalog_item}>
           <Image
-            src="/images/kittens/himberry2/00_himberry2.jpg"
-            width={200}
-            height={200}
-            alt="Kitten Himberry"
-            className={styles.catalog_item_img}
-          />
-          <div className={styles.catalog_item_bottom}>
-            <p className={styles.catalog_item_status + " " + styles.catalog_item_status_sold}></p>
-          </div>
-        </Link>
-        <Link href="/kittens/himberry-1" className={styles.catalog_item}>
-          <Image
             src="/images/kittens/himberry3/00_himberry3.jpg"
             width={200}
             height={200}

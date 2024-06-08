@@ -32,7 +32,7 @@ export default function Himberry1() {
           />
           <div className={styles.kitten_intro_hello + " " + (inView? `${styles.active}` : "")}>
             <div className={styles.kitten_intro_top}>
-              <p className={styles.kitten_intro_text_p}>My name is Himberry Arnold Lion. I am 12 weeks, color black tabby with brown tan.</p>
+              <p className={styles.kitten_intro_text_p}>Joanna Arnold Lion, female, 8 weeks. Colour mco ns 22.</p>
             </div>
             <div ref={ref} className={styles.kitten_intro_bottom}>
               <p className={styles.kitten_intro_status + " " + styles.kitten_intro_status_sold}></p>
