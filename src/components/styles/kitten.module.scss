@@ -161,7 +161,7 @@ $mobile: 768px;
 }
 .catalog_item_bottom {
   display: flex;
-  gap: 1.5vw;
+  gap: 1vw;
   position: absolute;
   z-index: 2;
   right: 1.7vw;
@@ -170,14 +170,14 @@ $mobile: 768px;
   transition: all .5s ease;
   height: 2.1vw;
   @media screen and (min-width: $fullscreen) {
-    gap: 23px;
+    gap: 15px;
     right: 26px;
     left: 20px;
     bottom: 11px;
     height: 32px;
   }
   @media screen and (max-width: $mobile) {
-    gap: 4vw;
+    gap: 3.6vw;
     right: 5.8vw;
     left: 5.1vw;
     bottom: 3.1vw;
